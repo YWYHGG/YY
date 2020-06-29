@@ -1,0 +1,1067 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*居中就加上w*/
+.w{
+	width: 980px;
+	margin: 0 auto;
+	/*background-color: #C11125;*/
+}
+/*解决高度塌陷*/
+.clearfix:after{
+	/*在part-three后面添加内容*/
+	content: "";
+	/*转换为块元素*/
+	display: block;
+	/*清楚浮动*/
+	clear: both;
+}
+/*设置顶部背景颜色*/
+.bg{
+background:url(../images/bg.png) repeat-x;
+}
+/*这个div包着顶部的内容方便做居中效果和统一设置，行高、字体大小、字体样式*/
+.bg_z{
+	line-height:32px ;
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+/*超链接伪类*/
+/*.bg_z a:hover{
+	color: #f4253b;
+}*/
+/*欢迎光临字体颜色*/
+.bg .p1{
+	color: #999999;
+}
+/*右边的内容，设置float让它浮到右边*/
+.bg .p2{
+	float: right;
+}
+/*超链接去掉下划线，设置字体颜色*/
+.p1_a{
+	text-decoration: none;
+	color: #585757;
+}
+/*客服服务字体样式*/
+.p2_span_1{
+	color: #999999;
+}
+/*电话热线字体样式*/
+.p2_span_2{
+	color:#c11125;
+}
+/*设置logo高*/
+.logo{
+	height: 60px;
+}
+/*导航条设置*/
+.nav{
+	width: 980px;
+	overflow: hidden;
+}
+/*去掉样式*/
+.nav ul{
+	list-style: none;
+	float: left;
+	position: relative;
+	left: 50%;
+}
+/*为每个li做浮动*/
+.nav li{	
+	float: left;
+	position: relative;
+	right: 50%;
+	margin: 0 3px;	
+}
+/*设置nav下的超链接*/
+.nav a{
+	width: 100px;
+	height: 41px;
+	display: block;
+	text-decoration: none;
+	color: #666666;
+	text-align: center;
+	background:url(../images/nav.jpg) no-repeat;
+	line-height: 41px;
+}
+/*超链接伪类设置*/
+.nav .checked,.nav a:hover{
+	background: url(../images/nav-on.jpg) no-repeat;
+	color: #ffffff;
+}
+/* 设置背景 */
+.bg2{
+	height: 40px;
+	background: url(../images/bg2.png) repeat-x;
+}
+/* 搜索框栏全部div向左浮动 */
+.cat_title,.btn_search,.re,.i_cart,.af{
+	float: left;
+}
+/*商品分类设置*/
+.bg2 .cat_title{
+	width: 207px;
+	height: 40px;
+	background: url(../images/cat_title.jpg) no-repeat;
+	text-indent: 2em;
+	position: relative;
+}
+/* 商品分类超链接设置 */
+.cat_title a{
+	/*转为块元素可以设置宽高*/
+	text-decoration: none;
+	line-height: 40px;
+	color: #666666;
+	font-size:14px;
+	font-family: "宋体";	
+}
+.cat_title_bg{
+	position: absolute;
+	left: 160px;
+	top: 10px;
+}
+.cat_title_bg a{
+	float: left;
+	width: 21px;
+	height: 20px;
+	background: url(../images/arrow_down.jpg) no-repeat;
+}
+/*搜索框设置*/
+.bg2 .btn_search{
+	/*外边距向左距离10像素*/
+	margin-left: 10px;
+}
+/* 输入框 */
+.btn_search .input1{
+	float: left;
+	width: 204px;
+	height: 30px;
+	background-color:#ffffff;
+	border: 2px solid #cccccc;
+	margin-top: 3px;
+}
+/*搜索按钮*/
+.btn_search .input2{
+	width: 87px;
+	height: 34px;
+	background: url(../images/btn_search.jpg) no-repeat;
+	float: left;
+	margin-top: 3px;
+	border: none;
+}
+
+.bg2 .re{
+	margin-left: 27px;
+	line-height: 40px;
+	font-size: 12px;
+}
+.re p{
+	color: #ffffff;
+}
+/* 热门搜索设置了超链接 */
+.re a{
+	text-decoration: none;
+	color: #ffffff;
+}
+/*鼠标移到超链接处变红色*/
+/*.re a:hover{
+	color: red;
+}*/
+/*购物车设置背景图案*/
+.bg2 .i_cart{
+	width: 145px;
+	height: 30px;
+	background:url(../images/i_cart_1.jpg) no-repeat;
+	margin: 5px 0px 0px 57px;
+}
+/*购物车下的p标签再设置一个按钮图案*/
+.i_cart p{
+	line-height: 30px;
+	text-indent: 3em;
+	font-size: 12px;
+	color: #666666;
+	background: url(../images/i_cart_3.jpg) no-repeat right;
+	width: 130px;
+}
+/*去结算设置*/
+.bg2 .af{
+	width: 74px;
+	height: 30px;
+	background:url(../images/i_cart_4.jpg) no-repeat;
+	margin: 5px 0px 0px 0px;
+	/*字体量缩进1个*/
+	text-indent: 1em;
+}
+/* 超链接设置*/
+.af a{
+	color: #666666;
+	font-size: 12px;
+	line-height: 30px;
+	text-decoration: none;
+}
+/* 超链接伪类
+ * 鼠标放在超链接上变红色 */
+/*.af a:hover{
+	color: red;
+}*/
+/*设置下边距*/
+.part-two{
+	margin-bottom: 10px;
+}
+/*给菜单栏设置宽高*/
+.menu{
+	width: 205px;
+	height: 396px;
+	background-color: #fefbd0;
+	border: 1px solid #157128;
+}
+
+.menu ul{
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+.menu li{
+	padding-top:13px;
+	/*黑色的点点用图片设置*/
+	list-style-image: url(../images/dot2.gif);
+	/* 开启相对定位 */
+	position: relative;
+	left: 3em;
+	width: 150px;
+	height: 20px;
+	
+}
+.menu li a{
+	text-decoration: none;
+	color: #666666;
+	
+}
+.menu a:hover{
+	color:#121212;
+}
+.menu hr{
+	border: none;
+	margin: 0 auto;
+	border-bottom: 1px solid #CCCCCC;
+	width: 80%;
+	margin-top: 1px;
+}
+/* >大于号向右浮动 */
+.menu .menu_gt{
+	float: right;
+}
+/*第二部分内容div向左浮动
+ 	浮动之后会高度塌陷*/
+.menu,.slide_3,.slideshow,.information-bar{
+	float: left;
+}
+/* 最大的那张图片 */
+.slide_3{
+	margin: 10px 0px 10px 10px;
+}
+/*这个div是四张图片连在一起那个，就是轮播图*/
+.slideshow{
+	width: 544px;
+	height: 168px;
+	border: 4px solid #f3f3f3;
+	margin: 0px 10px 0px 10px ;
+}
+/*设置图片向左浮动可以去掉空格*/
+.slideshow img{
+	float: left;
+	margin-top: 12.5px;
+	height: 140px;
+}
+/*设置登录注册那部分内容*/
+.information-bar{
+	width: 199px;
+	height: 173px;
+	border: 1px solid #cccccc;
+}
+/*设置这个可以div更好的设置里边的内容*/
+.loginbox{
+	width: 199px;
+	background: url(../images/loginbox.jpg) no-repeat;
+}
+/* 免费注册,用户登录*/
+.loginbox #register,#user{
+	display: inline-block;
+	width: 96px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	text-decoration: none;
+	color: #666666;
+	font-family: "楷体";
+	font-size: 19px;
+}
+/* 重复代码
+.loginbox #user{
+	display: inline-block;
+	width: 96px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	text-decoration: none;
+	color: #666666;
+}*/
+
+.information-bar .shop{
+	height: 30px;
+	background-color: #f3f3f3;
+}
+.shop .shop_span1{
+	line-height: 30px;
+	position: relative;
+	left: 1em;
+	font-weight: bold ;
+	color: #6a6a6a;
+	font-family: "微软雅黑";
+	font-size: 13px;
+}
+/*去掉下划线*/
+.shop a{
+	text-decoration: none;
+}
+.shop .shop_span2{
+	float: right;
+	line-height: 30px;
+	padding-right: 1em;
+	color: #666666;
+	font-size: 13px;
+	font-family: "楷体";
+}
+/*  公告栏 */
+.information-bar .notice{
+	height: 105px;
+}
+.notice ul{
+	text-align: center;
+	padding: 10px 0 0 10px ;
+}
+.notice li{
+	list-style-image: url(../images/dot3.jpg);
+	position: relative;
+	left: 5px;
+}
+.notice a{
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+/*第三部分内容*/
+.part-three{
+	
+	/*background-color: #DDE9B9;*/
+}
+/*浮动之后会高度塌陷*/
+.lad,.part-three-z{
+	float: left;
+}
+/*三张图片设置*/
+.lad img{
+	display: block;
+	border: 1px solid #CCCCCC;
+}
+.lad #hl_margin{
+	margin: 5px 0px;
+	border: 1px solid #CCCCCC;
+}
+.part-three-z{
+	height: 231px;
+	margin-left: 10px;
+	border: 1px solid #CCCCCC;
+}
+/*去掉样式*/
+.nav_2 ul{
+	list-style: none;
+	
+}
+/*设置li*/
+.nav_2 li{
+	/*为每个li设置浮动*/
+	float: left;
+	text-align: center;
+	background-color: #ededed;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 2px solid #429020;
+}
+/*设置导航条2的超链接*/
+.nav_2 a{
+	/*转为块元素可以设置宽高*/
+	display: block;
+	width: 137px;
+	height: 32px;
+	text-decoration: none;
+	color: #666666;
+	/*设置行高*/
+	line-height: 32px;
+	font-family: "黑体";
+}
+/*设置背景的同时又设置了伪类*/
+.nav_2 .nav_2_xs,.nav_2 a:hover{
+	background: url(../images/switch.jpg) no-repeat;
+	color: #FFFFFF;
+}
+/*第三部分中间的内容设置浮动*/
+.qg{
+	float: left;
+	margin-top: 10px;
+}
+.part-three-z{
+	width: 552px;
+}
+/*每个div统一设置宽高，字体大小，向左浮动，外边距*/
+.part-three-z .qg .qg1,.qg2,.qg3,.qg4{
+	width: 115px;
+	font-size: 12px;
+	float: left;
+	margin: 0px 12px 10px 10px;
+}
+/*为每个div里的a设置*/
+.qg1 a,.qg2 a,.qg3 a,.qg4 a{
+	text-decoration: none;
+	color: #666666;
+	font-family: "新宋体";
+}
+/*加span更好的单独为价格设置样式*/
+.qg1 span,.qg2 span,.qg3 span,.qg4 span{
+	color: #c11125;
+}
+.gb{
+	width: 197px;
+	height: 231px;
+	margin-left: 10px;
+	float: left;
+	border: 1px solid #CCCCCC;
+}
+/*设置团购*/
+.gb_top{
+	
+	height: 32px;
+	background-color: #f3f3f3;
+}
+/*设置更多向右浮动*/
+#gd{
+	float: right;
+	padding-right: 1em;
+	font-size: 13px;
+	line-height: 32px;
+	color: #666666;
+	font-family: "楷体";
+}
+.gb_top a{
+	text-decoration: none;
+}
+/*设置团购*/
+#tg{
+	position: relative;
+	left: 1em;
+	line-height: 32px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666666;
+	font-weight: bold;
+}
+/*去掉下划线*/
+.gb_buttom a{
+	text-decoration: none;
+	color: #666666;
+}
+/*设置p元素样式*/
+.gb_buttom p{
+	font-size: 12px;
+	color: #666666;
+	/*缩进1字体*/
+	text-indent: 1em;
+	padding-top: 5px;
+}
+/*两张图片放一个div装着*/
+.c1-tg{
+	width: 196px;
+	height: 136px;
+	position: relative;
+	border-top: 1px dotted #CCCCCC;
+	border-bottom: 1px dotted #CCCCCC;
+	background: url(../images/tg1.jpg) no-repeat;
+	background-position: 50%;
+}
+.c1-tg-span{
+	position: absolute;
+	top: 30px;
+	left: 18px;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+.c1-tg img{
+	margin: 10px;
+}
+/*105样式设置红色*/
+.gb_buttom span{
+	color: #C11125;
+}
+/*设置外边距*/
+.banner{
+	margin: 10px 0px;
+}
+/*待会删
+.cat{
+	height: 1000px;
+	background-color: ;
+}*/
+.cat_ad{
+	height: 259px;
+	margin-bottom: 5px;
+}
+/*设置食品饮料*/
+.cat_ad_top{
+	height: 36px;
+	background-color: #ededed;
+}
+/*1F设置*/
+.cat_ad_top_left1{
+	height: 34px;
+	width: 203px;
+	float: left;
+	/*background-color: #e1e1e1;*/
+	background:#E1E1E1 url(../images/fs.jpg) 0 0 no-repeat;
+	border-bottom: 2px solid #429020;
+}
+/*1F缩进3个字符*/
+.cat_ad_top_left1 p{
+	line-height: 27px;
+	text-indent: 3em;
+} 
+/*span2是食品饮料设置*/
+.cat_ad_top_left1 .left_span2{
+	font-size: 19px;
+	color: #999999;
+}
+/*菜单栏向左浮动*/
+.cat_ad_top_right{
+	float: right;
+}
+/*菜单栏里的a标签*/
+.cat_ad_top_right a{
+	line-height: 34px;
+	text-decoration: none;
+	font-size: 13px;
+	padding-right: 5px;
+	color: #666666;
+	font-family: "微软雅黑";
+}
+/*图片部分设置*/
+.cat_ad_bottom{
+	margin-top: 10px;
+}
+/*图片部分最左边的一张距离上边5px*/
+.cat_ad1 img{
+	margin-top: 5px;
+}
+/*cat_ad_bottom里的div全部向左浮动*/
+.cat_ad1,.pd,.cas{
+	float: left;
+}
+/*中间四张图片div*/
+.pd{
+	width: 558px;
+	margin-left: 10px;
+}
+/*中间四张用四个小的div包住图片*/
+.pd_1,.pd_2,.pd_3,.pd_4{
+	width: 130px;
+	/*height: 250px;*/
+	float: left;
+	margin: 10px 0 0 9px;
+}
+/*设置图片下边的文字*/
+.pd a{
+	display: block;
+	padding-top: 8px;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+/*钱变色*/
+.pd_span1{
+	color: #999999;
+}
+/*钱变红色*/
+.pd_span2{
+	color: #c11125;
+}
+/*右边三张图片的宽，*/
+.cas{
+	width: 196px;
+}
+/*右边三张图片设置*/
+.cas img{
+	border: 1px solid #CCCCCC;
+	display: block;
+	margin-top: 5px;
+}
+
+/*2F美容护理*/
+.cat_ad{
+	height: 259px;
+	margin-bottom: 5px;
+}
+/*设置食品饮料*/
+.cat_ad_top{
+	height: 36px;
+	background-color: #ededed;
+}
+/*2F设置*/
+.cat_ad_top_left2{
+	height: 34px;
+	width: 203px;
+	float: left;
+	/*background-color: #e1e1e1;*/
+	background:#E1E1E1 url(../images/fs.jpg) 0 -30px no-repeat;
+	border-bottom: 2px solid #429020;
+}
+/*1F缩进3个字符*/
+.cat_ad_top_left2 p{
+	line-height: 27px;
+	text-indent: 3em;
+} 
+/*span2是食品饮料设置*/
+.cat_ad_top_left2 .left_span2{
+	font-size: 19px;
+	color: #999999;
+}
+/*菜单栏向左浮动*/
+.cat_ad_top_right{
+	float: right;
+}
+/*菜单栏里的a标签*/
+.cat_ad_top_right a{
+	line-height: 34px;
+	text-decoration: none;
+	font-size: 13px;
+	padding-right: 5px;
+	color: #666666;
+	font-family: "微软雅黑";
+}
+/*图片部分设置*/
+.cat_ad_bottom{
+	margin-top: 10px;
+}
+/*图片部分最左边的一张距离上边5px*/
+.cat_ad2 img{
+	margin-top: 5px;
+}
+/*cat_ad_bottom里的div全部向左浮动*/
+.cat_ad2,.qg0,.cas{
+	float: left;
+}
+/*中间四张图片div*/
+.qg0{
+	width: 558px;
+	margin-left: 10px;
+}
+/*中间四张用四个小的div包住图片*/
+.qg2-1,.qg2-2,.qg2-3,.qg2-4{
+	width: 130px;
+	/*height: 250px;*/
+	float: left;
+	margin: 10px 0 0 9px;
+}
+/*设置图片下边的文字*/
+.qg0 a{
+	display: block;
+	padding-top: 8px;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+/*钱变色*/
+.qg0_span1{
+	color: #999999;
+}
+/*钱变红色*/
+.qg0_span2{
+	color: #c11125;
+}
+/*右边三张图片的宽，*/
+.cas{
+	width: 196px;
+}
+/*右边三张图片设置*/
+.cas img{
+	border: 1px solid #CCCCCC;
+	display: block;
+	margin-top: 5px;
+}
+
+/*3F母婴*/
+.cat_ad{
+	height: 259px;
+	margin-bottom: 5px;
+}
+/*设置食品饮料*/
+.cat_ad_top{
+	height: 36px;
+	background-color: #ededed;
+}
+/*3F母婴设置*/
+.cat_ad_top_left3{
+	height: 34px;
+	width: 203px;
+	float: left;
+	/*background-color: #e1e1e1;*/
+	background:#E1E1E1 url(../images/fs.jpg) 0 -60px no-repeat;
+	border-bottom: 2px solid #429020;
+}
+/*3F缩进3个字符*/
+.cat_ad_top_left3 p{
+	line-height: 27px;
+	text-indent: 3em;
+} 
+/*span2是食品饮料设置*/
+.cat_ad_top_left3 .left_span2{
+	font-size: 19px;
+	color: #999999;
+}
+/*菜单栏向左浮动*/
+.cat_ad_top_right{
+	float: right;
+}
+/*菜单栏里的a标签*/
+.cat_ad_top_right a{
+	line-height: 34px;
+	text-decoration: none;
+	font-size: 13px;
+	padding-right: 5px;
+	color: #666666;
+	font-family: "微软雅黑";
+}
+/*图片部分设置*/
+.cat_ad_bottom{
+	margin-top: 10px;
+}
+/*图片部分最左边的一张距离上边5px*/
+.cat_ad3 img{
+	margin-top: 5px;
+}
+/*cat_ad_bottom里的div全部向左浮动*/
+.cat_ad3,.qg0,.cas{
+	float: left;
+}
+/*中间四张图片div*/
+.qg0{
+	width: 558px;
+	margin-left: 10px;
+}
+/*中间四张用四个小的div包住图片*/
+.qg2-1,.qg2-2,.qg2-3,.qg2-4{
+	width: 130px;
+	/*height: 250px;*/
+	float: left;
+	margin: 10px 0 0 9px;
+}
+/*设置图片下边的文字*/
+.qg0 a{
+	display: block;
+	padding-top: 8px;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+/*钱变色*/
+.qg0_span1{
+	color: #999999;
+}
+/*钱变红色*/
+.qg0_span2{
+	color: #c11125;
+}
+/*右边三张图片的宽，*/
+.cas{
+	width: 196px;
+}
+/*右边三张图片设置*/
+.cas img{
+	border: 1px solid #CCCCCC;
+	display: block;
+	margin-top: 5px;
+}
+
+/*4F厨卫清洁*/
+.cat_ad_top_left4{
+	height: 34px;
+	width: 203px;
+	float: left;
+	/*background-color: #e1e1e1;*/
+	background:#E1E1E1 url(../images/fs.jpg) 0 -90px no-repeat;
+	border-bottom: 2px solid #429020;
+}
+/*3F缩进3个字符*/
+.cat_ad_top_left4 p{
+	line-height: 27px;
+	text-indent: 3em;
+} 
+/*span2是食品饮料设置*/
+.cat_ad_top_left4 .left_span2{
+	font-size: 19px;
+	color: #999999;
+}
+/*菜单栏向左浮动*/
+.cat_ad_top_right{
+	float: right;
+}
+/*菜单栏里的a标签*/
+.cat_ad_top_right a{
+	line-height: 34px;
+	text-decoration: none;
+	font-size: 13px;
+	padding-right: 5px;
+	color: #666666;
+	font-family: "微软雅黑";
+}
+/*图片部分设置*/
+.cat_ad_bottom{
+	margin-top: 10px;
+}
+/*图片部分最左边的一张距离上边5px*/
+.cat_ad4 img{
+	margin-top: 5px;
+}
+/*cat_ad_bottom里的div全部向左浮动*/
+.cat_ad4,.qg0,.cas{
+	float: left;
+}
+/*中间四张图片div*/
+.qg0{
+	width: 558px;
+	margin-left: 10px;
+}
+/*中间四张用四个小的div包住图片*/
+.qg2-1,.qg2-2,.qg2-3,.qg2-4{
+	width: 130px;
+	/*height: 250px;*/
+	float: left;
+	margin: 10px 0 0 9px;
+}
+/*设置图片下边的文字*/
+.qg0 a{
+	display: block;
+	padding-top: 8px;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+/*钱变色*/
+.qg0_span1{
+	color: #999999;
+}
+/*钱变红色*/
+.qg0_span2{
+	color: #c11125;
+}
+/*右边三张图片的宽，*/
+.cas{
+	width: 196px;
+}
+/*右边三张图片设置*/
+.cas img{
+	border: 1px solid #CCCCCC;
+	display: block;
+	margin-top: 5px;
+}
+/*5F家具*/
+.cat_ad_top_left5{
+	height: 34px;
+	width: 203px;
+	float: left;
+	/*background-color: #e1e1e1;*/
+	background:#E1E1E1 url(../images/fs.jpg) 0 -120px no-repeat;
+	border-bottom: 2px solid #429020;
+}
+/*3F缩进3个字符*/
+.cat_ad_top_left5 p{
+	line-height: 27px;
+	text-indent: 3em;
+} 
+/*span2是食品饮料设置*/
+.cat_ad_top_left5 .left_span2{
+	font-size: 19px;
+	color: #999999;
+}
+/*菜单栏向左浮动*/
+.cat_ad_top_right{
+	float: right;
+}
+/*菜单栏里的a标签*/
+.cat_ad_top_right a{
+	line-height: 34px;
+	text-decoration: none;
+	font-size: 13px;
+	padding-right: 5px;
+	color: #666666;
+	font-family: "微软雅黑";
+}
+/*图片部分设置*/
+.cat_ad_bottom{
+	margin-top: 10px;
+}
+/*图片部分最左边的一张距离上边5px*/
+.cat_ad4 img{
+	margin-top: 5px;
+}
+/*cat_ad_bottom里的div全部向左浮动*/
+.cat_ad4,.qg0,.cas{
+	float: left;
+}
+/*中间四张图片div*/
+.qg0{
+	width: 558px;
+	margin-left: 10px;
+}
+/*中间四张用四个小的div包住图片*/
+.qg2-1,.qg2-2,.qg2-3,.qg2-4{
+	width: 130px;
+	/*height: 250px;*/
+	float: left;
+	margin: 10px 0 0 9px;
+}
+/*设置图片下边的文字*/
+.qg0 a{
+	display: block;
+	padding-top: 8px;
+	font-size: 12px;
+	color: #666666;
+	text-decoration: none;
+}
+/*钱变色*/
+.qg0_span1{
+	color: #999999;
+}
+/*钱变红色*/
+.qg0_span2{
+	color: #c11125;
+}
+/*右边三张图片的宽，*/
+.cas{
+	width: 196px;
+}
+/*右边三张图片设置*/
+.cas img{
+	border: 1px solid #CCCCCC;
+	display: block;
+	margin-top: 5px;
+}
+/*底部设置*/
+.bottom{
+	width: 100%;
+	height: 148px;
+	background-color: #f3f3f3;
+	
+}
+/*底部导航用了六个div*/
+.zn,.tk,.fs,.bz,.gy,.kf{
+	height: 138px;
+	float: left;
+	padding-top: 10px;;
+}
+/*每个div左边距80px*/
+.tk,.fs,.bz,.gy,.kf{
+	margin-left: 80px;
+}
+/*设置标题这里用span方便设置*/
+.zn span,.tk span,.fs span,.bz span,.gy span{
+	color: #999999;
+	font-size:18px ;
+	font-family: "微软雅黑";
+}
+/*标题下水平线*/
+.zn hr,.tk hr,.fs hr,.bz hr,.gy hr{
+	border: none;
+	margin: 5px 0;
+	border-bottom: 1px dotted #CCCCCC;
+	width: 150%;
+}
+/*标题下的内容用a标签*/
+.zn a,.tk a,.fs a,.bz a,.gy a{
+	/*a标签是行内元素，转为块元素*/
+	display: block;
+	text-decoration: none;
+	font-size: 13px;
+	color: #666666;
+}
+/*鼠标放在a标签上变红色*/
+.bottom_z a:hover{
+	color: #0d0c0c;
+}
+/*客服中心信箱字体设置*/
+.kf .kf_p1{
+	color: #999999;
+}
+/*信箱号设置*/
+.kf span{
+	font-size:10px ;
+	color: #666666;
+}
+/*客服中心热线*/
+.kf_p2{
+	color: #999999;
+	padding-top: 30px;
+}
+/*客服中心热线号码*/
+#kf_span{
+	font-size: 16px;
+	color: #c11125;
+}
+/*小贴士div*/
+.tips{
+	height: 44px;
+}
+/*小贴士p标签*/
+.tips p{
+	float: right;
+	font-size: 12px;
+	color: #666666;
+}
+/*底部三张图片*/
+.img-content{
+	height: 72px;	
+}
+/*三张图片居中*/
+.img-content ul{
+	list-style: none;
+	float: left;
+	position: relative;
+	left: 50%;
+}
+.img-content ul li{
+	float: left;
+	position: relative;
+	right: 50%;
+	margin: 0 10px;	
+}
+/*版权所有设置*/
+.copyright p{
+	text-align: center;
+	color: #999999;
+	font-size: 12px;
+}
+/*下边距*/
+.copyright{
+	margin-bottom: 18px;
+}
+/*底部四张图片设置*/
+.u ul{
+	list-style: none;
+	float: left;
+	position: relative;
+	left: 50%;
+}
+/*li浮动开启相对定位*/
+.u ul li{
+	float: left;
+	position: relative;
+	right: 50%;
+	margin: 0 15px;
+}
